@@ -1,0 +1,82 @@
+.product-list {
+  padding: 40px 20px;
+  display: flex;
+  gap: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.product-list__card {
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 4px;
+  width: 270px; /* Largura fixa para manter o padrão */
+  height: 480px; /* Altura um pouco maior para caber tudo perfeitamente */
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list__card:hover {
+  outline: 1px solid blue;
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.product-list__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+}
+
+.product-list__card img {
+  height: 200px; /* Altura fixa para a imagem não estourar o card */
+  width: 200px;
+  object-fit: contain; /* Mantém a proporção correta da foto */
+  display: block;
+  border-radius: 4px;
+}
+
+.product-item__name {
+  font-size: 18px;
+  color: blue;
+  text-align: center;
+  margin: 10px 0 5px 0;
+  height: 50px; /* Garante espaço igual para nomes grandes ou pequenos */
+  display: flex;
+  align-items: center;
+}
+
+.product-item__price {
+  color: orange;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-item__price-deion {
+  color: #6c757d;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-item__buy-button {
+  background-color: blue;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: auto; /* Joga o botão sempre alinhado na parte inferior do card */
+  width: 100%;
+}
+
+.product-item__buy-button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}

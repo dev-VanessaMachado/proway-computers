@@ -1,0 +1,63 @@
+.contact__title {
+  font-size: 44px;
+  color: #333333; /* Substituiu o var(--gray) */
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 50px;
+  min-width: 300px;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  background-color: #007bff; /* Substituiu o var(--blue) */
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 6px 12px;
+  width: 200px;
+}
+
+.contact-form button:hover {
+  filter: brightness(1.1);
+}
+
+.contact__container {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 20px;
+  padding: 20px 0;
+}
+
+.contact-form button:disabled {
+  background-color: #6c757d; /* Substituiu o var(--gray) para o botão desativado */
+}
+
+.contact-form button:disabled:hover {
+  filter: none;
+}
+
+/* Alterado de ng-touched para ng-dirty para funcionar enquanto digita */
+.contact-form input.ng-invalid.ng-dirty,
+.contact-form textarea.ng-invalid.ng-dirty {
+  border: 2px solid red !important;
+}
+
+/* Alterado de ng-touched para ng-dirty para funcionar enquanto digita */
+.contact-form input.ng-valid.ng-dirty,
+.contact-form textarea.ng-valid.ng-dirty {
+  border: 2px solid green !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  display: block;
+}
